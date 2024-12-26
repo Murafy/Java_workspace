@@ -34,9 +34,12 @@ public class A04Quiz {
     int rateWon = 1450;
 
     float dallr = wondallr(money, rateWon);
+    //메소드 호출 
     System.out.println("Won → Dallr 환전 : " + dallr);
 
+
     float won = dallrwon(12, rateWon);
+    //메소드 호출
     System.out.println("Dallr → Won 환전 : " + won);
     
 } 
