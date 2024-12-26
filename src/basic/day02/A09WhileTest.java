@@ -34,7 +34,7 @@ public class A09WhileTest {
         sum = 0;
         while (n<=m) {
             sum += n++;
-            System.out.println("n= " + n + "   m=" + m  + "    최종합= "+ sum);
+            System.out.println("😋n= " + n + "   m=" + m  + "    최종합= "+ sum);
         }
      
 
