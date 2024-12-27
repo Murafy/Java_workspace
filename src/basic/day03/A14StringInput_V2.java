@@ -1,8 +1,8 @@
-package basic.day02;
+package basic.day03;
 
 import java.util.Scanner;
 
-public class A14Exam {
+public class A14StringInput_V2 {
     //A12 번 while 문으로 유효한 아이디 입력할때까지 반복
     public static void main(String[] args) {
             //여러개의 문자를 입력 받아 문자열을 리턴 해주는 메소드 지원
@@ -16,7 +16,7 @@ public class A14Exam {
 
         //유효한 userid : isBlank 가 아니고 길이가 5글자 이상이여한다면? 조건 두개다 True 여야 할때 or 연산 
 
-        if(userid.isBlank() || userid.length() < 5){ //isBlank -> 공백포함안함
+        if(userid.isBlank() || userid.length() < 5 || !A19MyCharMethod.isAlphabet(userid.charAt(0))) { //isBlank -> 공백포함안함
             System.out.println("유효한 아이디 입력이 아닙니다.");
         }else {
             System.out.println("입력한 아이디 확인 : " + userid);
@@ -31,7 +31,7 @@ public class A14Exam {
             //if(userid.nextLine().toUpperCase().equals("N"))
             //if(!userid.nextLine().toUpperCase().equals("Y") Y가 아니면 나머지는 다 false
             // run=false;
-            // ↑ 강사님 코드 / 해당방법이 한곳에 다 적을수있어서 훨씬 효율적임
+            //해당방법이 한곳에 다 적을수있어서 훨씬 효율적임
             //-------------------------------------------------------------------------------
             String continueInput = input.nextLine();
             // 진행 여부를 입력받는 부문
